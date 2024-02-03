@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>C*zinho</title>
+</head>
+<body background="papeldeparede.png">
+    <h1>C*zinho hoje?</h1>
+    
+    <div class="buttons-container">
+        <!-- <button class="btn" nome="botao" id="botao">
+            <a href="https://www.youtube.com/watch?v=Kd_phJHKVAM&ab_channel=MEMEBASE" target="_blank">Sim</a> <label for="botao">     </label>
+        </button> -->
+        <a href="https://www.youtube.com/watch?v=Kd_phJHKVAM&ab_channel=MEMEBASE" target="_blank"><input type="button" value="Sim" class="btn"></a>
+        <button id="no" class="btn">Não</button>
+    </div>
+
+    <img src="Foto.png" alt="foto">
+    
+    <p>Música para conquistar a gata</p>
+    <audio src="Careless_Whisper.mp3" controls class="audio"></audio> 
+
+    <script>
+
+        let button = document.getElementById('no')
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+
+        button.addEventListener('mouseover',function(){
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px";
+        })
+
+    </script>
+</body>
+</html>
